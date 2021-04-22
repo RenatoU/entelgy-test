@@ -19,7 +19,7 @@ public class CommentController {
 	@Autowired
 	CommentService service;
 	
-	@PostMapping
+	@PostMapping("/getAll")
 	public ResponseEntity<List<Comment>> getComments(){
 		
 		List<Comment> comments = service.getComments();
